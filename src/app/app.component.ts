@@ -13,7 +13,8 @@ export class AppComponent {
   }
   ngOnInit(): void {
     this.hubConnectionBuilder = new HubConnectionBuilder()
-      .withUrl('https://localhost:7237/offers')
+      //.withUrl('https://localhost:7237/offers')
+      .withUrl('http://localhost:18866/offers')
       .configureLogging(LogLevel.Information)
       .build();
     this.hubConnectionBuilder
